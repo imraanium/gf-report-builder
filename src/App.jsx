@@ -1,19 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Form from './components/form'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import InputForm from './components/inputForm'
+import OutputForm from './components/outputForm'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import { Container } from 'react-bootstrap'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <h1 className="text-2xl font-bold title">
-      GoFluent Report Builder
-    </h1>
-    <Form/>
-    </>
+    <Container fluid className='main-container d-flex'>
+    <Col>
+      <h1 className="title font-bold mb-4">
+        goFLUENT Report Builder
+      </h1>
+      <div className='d-flex'>
+      <Row className="me-3 w-50">
+      <InputForm />
+      </Row>
+      <Row className="me-3 w-50">
+        <OutputForm/>
+      </Row>
+      </div>
+    </Col>
+    </Container>
   )
 }
 

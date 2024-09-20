@@ -1,3 +1,9 @@
+##Description
+At goFluent, language trainers need to create a report for each lesson.
+This tool helps build a report quickly.
+It is a web app with a form to fill out the lesson report using the goFluent method.
+
+##Libraries and Frameworks
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

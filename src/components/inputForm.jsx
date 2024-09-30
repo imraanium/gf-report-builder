@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
@@ -42,7 +43,7 @@ const InputForm = () => {
             type="button"
             variant="dark"
             className="input-form__correction-cta mb-3 w-100"
-            onclick={() => {}}
+            onClick={() => {}}
             aria-label="Input correction"
           >
             Insert
@@ -61,7 +62,7 @@ const InputForm = () => {
             type="button"
             variant="dark"
             className="input-form__vocabulary-cta mb-3 w-100"
-            onclick={() => {}}
+            onClick={() => {}}
             aria-label="Input vocabulary"
           >
             Insert
